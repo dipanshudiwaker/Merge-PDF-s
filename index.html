@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merger App</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Merger Application</h1>
+        <input type="file" id="file-input" multiple accept=".pdf">
+        <ul id="file-list"></ul> <!-- Add this line -->
+        <button id="merge-button">Merge PDFs</button>
+        <a id="download-link" style="display:none;">Download Merged PDF</a>
+    </div>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
